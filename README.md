@@ -100,5 +100,4 @@ NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_END
 ```
 
-Demo链接如下：[https://github.com/slipawayleaon/LLBarChart](https://github.com/slipawayleaon/LLBarChart)
 如果对你有帮助，请给个star，谢谢!!!
