@@ -58,6 +58,13 @@
 #pragma mark - LLBarChartDelegate
 - (void)barChartDidSelected:(LLBarChart *)barChart bar:(LLBar *)bar {
     NSLog(@"bar : %@", bar);
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"你点击了bar" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:alertController animated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
