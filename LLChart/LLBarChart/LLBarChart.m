@@ -112,7 +112,7 @@ static CGFloat const k_default_bar_blank = 14.f;
         UILabel *label = [UILabel building:self backgroundColor:[UIColor clearColor] font:[UIFont systemFontOfSize:10] textColor:RGBColor(0xffffff) textAlignment:1 numberOfLines:1];
         label.text = self.xLabels[i];
         label.size = CGSizeMake(60, 14);
-        label.centerX = k_margin_left + (i + 1) * (k_default_bar_blank + k_default_bar_width) - k_default_bar_width / 2;
+        label.centerX = k_margin_left + (i + 1) * (self.barBlank + self.barWidth) - self.barWidth / 2;
         label.top = self.height - k_margin_bottom;
     }
     
@@ -159,9 +159,9 @@ static CGFloat const k_default_bar_blank = 14.f;
     for (int i = 0; i < self.dataArray.count; i ++) {
         float barValue = [self.dataArray[i] floatValue];
         
-        CGFloat left = k_margin_left + k_default_bar_blank + i * (k_default_bar_blank + k_default_bar_width);
+        CGFloat left = k_margin_left + self.barBlank + i * (self.barBlank + self.barWidth);
         CGFloat top = self.height - k_margin_bottom - [self convertFrameFromValue:barValue];
-        CGFloat width = k_default_bar_width;
+        CGFloat width = self.barWidth;
         CGFloat height = [self convertFrameFromValue:barValue];
         LLBar *bar = [[LLBar alloc] initWithFrame:CGRectMake(left, top, width, height) offset:CGSizeMake(self.offset.width, self.offset.height)];
         bar.tag = k_bar_tag + i;
