@@ -138,7 +138,7 @@ static CGFloat const k_default_bar_blank = 14.f;
     for (int i = 0; i < self.yLabels.count; i ++) {
         CGFloat out_point_x = k_margin_left;
         CGFloat int_point_x = k_margin_left + self.offset.width;
-        CGFloat end_point_x = self.height - k_margin_right;
+        CGFloat end_point_x = self.width - k_margin_right;
         
         CGFloat out_point_y = self.height - k_margin_bottom - [self convertFrameFromValue:[self.yLabels[i] floatValue]];
         CGFloat int_point_y = out_point_y - self.offset.height;

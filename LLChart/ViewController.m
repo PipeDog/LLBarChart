@@ -37,13 +37,13 @@
     NSArray *yLabels = @[@20, @40, @60, @80, @100];
     NSArray *dataArray = @[@0, @30, @38, @100, @90, @50];
     
-    _barChart = [[LLBarChart alloc] initWithFrame:CGRectMake(30, 100, 300, 300) offset:CGSizeMake(10, 7)];
+    _barChart = [[LLBarChart alloc] initWithFrame:CGRectMake(30, 100, 320, 300) offset:CGSizeMake(10, 7)];
     _barChart.xLabels = xLabels;
     _barChart.yLabels = yLabels;
     _barChart.dataArray = dataArray;
     _barChart.ySuffix = @"人";
-    _barChart.barWidth = 30;
-    _barChart.barBlank = 30;
+    _barChart.barWidth = 15;
+    _barChart.barBlank = 15;
     _barChart.delegate = self;
     _barChart.needAnimation = YES;
     [self.view addSubview:_barChart];
