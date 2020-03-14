@@ -5,7 +5,7 @@ Demo效果如下:
 
 ![LLBarChart.gif](LLBarChart.gif)
 
-创建试图的方法很简单, 只要几行代码就可以了:
+创建试图方法如下:
 ```
     NSArray *xLabels = @[@"Python", @"iOS", @"Java", @"C", @"C++", @"Android"];
     NSArray *yLabels = @[@20, @40, @60, @80, @100];
@@ -99,5 +99,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 ```
-
-如果对你有帮助，请给个star，谢谢!!!
